@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tok-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="ab">
+        <div class="logo">
+            <img src="images.png" alt="">
+        </div>
+        <a href="#" id='btn' class="toggle-btn logo1">
+            <span id='a1'class="bar"></span>
+            <span id='a2'class="bar"></span>
+            <span id='a3'class="bar"></span>
+        </a>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+       
+    </nav>
+    <!--game area-->
+    <div class="gameContainer">
+        <h4></h4>
+        <div class="container">
+            <div cellIndex="0" class="box y"></div>
+            <div cellIndex="1" class="box y"></div>
+            <div cellIndex="2" class="box x y"></div>
+            <div cellIndex="3" class="box y"></div>
+            <div cellIndex="4" class="box y"></div>
+            <div cellIndex="5" class="box x y"></div>
+            <div cellIndex="6" class="box "></div>
+            <div cellIndex="7" class="box"></div>
+            <div cellIndex="8" class="box x"></div>
+        </div>
+        <h2 id="status"></h2>
+        <button id="resetbtn" type="reset">Restart</button>
+    </div>
+
+    <!--script-->
+    <script src="script.js"></script>
+</body>
+</html>
