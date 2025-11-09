@@ -15,11 +15,13 @@ jobs:
             - name: Setup Pages
               run: echo "hello"
     test:
+      needs: build
       runs-on: ubuntu-latest
       steps:
         - name: test
           run: echo "test--completed"
     deploy:
+      needs: test
       runs-on: ubuntu-latest
       steps:
         - name: test
